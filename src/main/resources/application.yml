@@ -1,0 +1,20 @@
+spring:
+  application.name: meetup-spring
+  data:
+    mongodb:
+      host: "localhost"
+      port: 27017
+      database: "test-db"
+  kafka:
+    bootstrap-servers: "localhost:29092"
+    topics:
+      user-create:
+        name: "user.create"
+        group-id: "test-group"
+
+integration:
+  dog-fact:
+    host: "https://dogapi.dog/api/v2"
+  cat-fact:
+    host: "https://catfact.ninja"
+
